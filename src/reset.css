@@ -1,0 +1,153 @@
+/* Reset CSS */
+
+/* Обнуляем отступы и поля по умолчанию */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+/* Обнуляем границы у списка и определений */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Обнуляем выход за пределы контейнера для изображений и объектов */
+img,
+iframe {
+    max-width: 100%;
+}
+
+/* Обнуляем стандартное форматирование ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Обнуляем стили для заголовков */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+/* Обнуляем стандартное форматирование элементов формы */
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+}
+
+/* Обнуляем стандартные отступы и выравнивание для элементов формы */
+button,
+input {
+    vertical-align: middle;
+}
+
+/* Обнуляем стандартные стили для таблиц */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Обнуляем стандартное выравнивание для ячеек таблицы */
+td,
+th {
+    text-align: left;
+}
+
+/* Обнуляем стандартные стили для медиа-элементов */
+audio,
+video {
+    display: inline-block;
+}
+
+/* Обнуляем стандартные стили для блоков HTML5-секции и группировки контента */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* Обнуляем стандартные стили для элемента canvas */
+canvas {
+    display: inline-block;
+}
+
+/* Обнуляем стандартные стили для диалоговых окон */
+dialog {
+    display: block;
+}
+
+/* Обнуляем стандартное выравнивание для progress элемента */
+progress {
+    vertical-align: baseline;
+}
+
+/* Обнуляем стандартное стили для элементов интерфейса input[type="number"] и input[type="range"] */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="range"]::-webkit-slider-thumb {
+    height: auto;
+}
+
+/* Убираем элементы управления в виде стрелок в input[type="date"] и input[type="time"] */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-outer-spin-button {
+    display: none;
+}
+
+/* Обнуляем стандартные стили для полосы прокрутки */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}

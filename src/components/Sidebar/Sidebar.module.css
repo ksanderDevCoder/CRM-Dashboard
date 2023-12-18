@@ -1,0 +1,100 @@
+.sidebar {
+    width: 306px;
+    min-height: 1198px;
+    background: var(--color-white);
+    box-shadow: 0 10px 60px var(--color-light-gray);
+    position: relative;
+}
+
+.sidebar__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 36px;
+}
+
+.sidebar__logo-icon {
+    width: 37px;
+    height: 37px;
+    margin-left: 28px;
+}
+
+.sidebar__logo-title {
+    color: var(--color-black);
+    font-size: clamp(1.3rem, 5vw, 26px);
+    font-weight: 600;
+    letter-spacing: clamp(0.1px, 1vw, 0.26px);
+}
+
+.sidebar__logo-title::after {
+    content: " v.01";
+    color: var(--color-sidebar-text);
+    font-size: clamp(0.625rem, 2.5vw, 10px);
+    letter-spacing: clamp(-0.05px, 0.5vw, -0.1px);
+    font-weight: 500;
+}
+
+.sidebar__user-profile {
+    position: absolute;
+    bottom: 0;
+}
+
+.sidebar__user-profile-info {
+    margin: 0 0 76px 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sidebar__user-profile-avatar {
+    border-radius: 42px;
+    cursor: pointer;
+}
+
+.sidebar__user-profile-name,
+.sidebar__user-profile-role {
+    margin: 0;
+    color: var(--color-black);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.14px;
+}
+
+.sidebar__user-profile-role {
+    color: var(--color-sidebar-subtext);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.12px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100vw;
+        min-height: 100px;
+        flex-direction: row;
+    }
+
+    .sidebar__logo-title {
+        margin: 0 auto;
+    }
+
+    .sidebar__logo-icon {
+        display: none;
+    }
+
+    .sidebar__user-profile {
+        display: flex;
+        align-items: center;
+        top: 0;
+        right: 0;
+    }
+
+    .sidebar__user-profile-info {
+        margin: 0;
+    }
+
+    .sidebar__user-profile-name,
+    .sidebar__user-profile-role {
+        display: none;
+    }
+}
